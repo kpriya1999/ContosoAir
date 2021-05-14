@@ -1,0 +1,18 @@
+trigger:
+- none
+
+resources:
+  pipelines:
+    - pipeline: buildContosoAir
+      source: kpriya1999.ContosoAir
+      trigger:
+        branches:
+         include:
+           - master 
+
+pool:
+  vmImage: ubuntu-latest
+
+
+
+
